@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&amp;display=swap" rel="stylesheet">
+    <title>Flatpack Assembly Service</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-header">
+            <header>
+                <div><img src="images/star11.jpg" alt="star flatpack logo"></div>
+                <div class="header-welcome">
+                    <h2>Welcome to Our Star Flatpack <br />Assembly Service...</h2>
+                </div>
+                <div class="header-mail">
+                    <h2>info-star@googlemail.com <br /> Phone: 0743854221</h2>
+                </div>
+            </header>
+            <nav>
+                <ul class="navigation">
+                    <li><a id="home-btn" class="navigation-a" href="index.html">Home</a></li>
+                    <li><a id="ser-btn" class="navigation-a" href="services.html">Services</a></li>
+                    <li><a id="gal-btn" class="navigation-a" href="gallery.html">Gallery</a></li>
+                    <li><a id="price-btn" class="navigation-a" href="prices.html">Guide Pricing</a></li>
+                    <li><a id="cont-btn" class="contact" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <div class="main-image">
+                <img src="images/flatpack.jpg" alt="flatpack assembly">
+            </div>
+            <div class="flex-container">
+                <div class="intro">
+                    <h1>You Buy it, We build it!!!</h1>
+                    <p>We offer a professional & reliable service to our customers
+                        who wish to take the hassle out assembling flatpack furniture.
+                        Let us do it for you! Flat pack furniture can be tricky to build by yourself
+                        resulting in an incomplete, wobbly or broken piece of furniture.
+                        Don't waste a precious weekend assembling just one item when we can
+                        conveniently and quickly construct your flat pack furniture for you.
+                        That’s where we can help and We offer a fixed price service
+                        where you don’t pay any more than the price we quote,
+                        so no need to worry about being charged by the hour
+                        and wondering just how many hours a job will take!
+                    </p>
+                </div>
+                <!--
+                <aside class="sidebar">
+                    <div class="form">
+                        <form class="" action="index.html" method="post">
+                            <p class="form-paragraph">Make an enquiry</p>
+                            <label class="label" for="name">Full Name:</label>
+                            <input id="name" type="text" placeholder="Henry Hudson"><br>
+                            <label class="label" for="telephone">Telephone:</label>
+                            <input id="telephone" type="tel" placeholder="07935 983600"><br>
+                            <label class="label" for="mail">E-mail:</label>
+                            <input id="mail" type="email" placeholder="h_hudson@yahoo.com"><br>
+                            <label class="label" for="post">Post Code:</label>
+                            <input id="post" type="post" placeholder="BH15 4PW"><br>
+                            <label class="label" for="descrip">Description:</label><br>
+                            <textarea id="descrip" rows="8" cols="80"
+                                placeholder="Description of item(s) to be assembled..."></textarea>
+                        </form>
+                    </div>
+                </aside>
+                -->
+            </div>
+        </main>
+
+        <footer>
+            <p class="footer">&copy; 2020 StarFlatpack Assembly Service. All Rights Reserved</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function getLetterFromGrade(grade) {
+            if (grade >= 15) {
+                return 'A';
+            } else if (grade >= 10) {
+                return 'B';
+            } else {
+                return 'F';
+            }
+        }
+        console.log(getLetterFromGrade(27));
+        console.log(getLetterFromGrade(12));
+        console.log(getLetterFromGrade(5));
+    </script>
+</body>
+
+</html>
