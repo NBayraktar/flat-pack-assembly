@@ -116,9 +116,11 @@ footer p {
 }
 
 .main-image img {
-    margin-top: 15.5rem;
+    margin-top: 15.65rem;
     width: 100%;
-    height: 45vh;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 .flex-container {
@@ -233,7 +235,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15.5rem;
+    margin-top: 15.65rem;
     background-image: linear-gradient(to left, #494949, #959595);
 }
 
@@ -305,7 +307,6 @@ textarea {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2.5rem;
 }
 
 .boxes {
@@ -340,7 +341,81 @@ textarea {
     list-style: circle;
     list-style-position: inside;
     line-height: 3rem;
-    color:  rgba(53, 53, 53, 0.7);
-    border-bottom:  0.1rem solid  rgba(53, 53, 53, 0.08);
+    color: rgba(53, 53, 53, 0.7);
+    border-bottom: 0.1rem solid rgba(53, 53, 53, 0.08);
     padding: 1.2rem 0.8rem 0 1.8rem;
 }
+
+/* Gallery */
+
+.gallery {
+    margin-top: 15.65rem;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: repeat(3, 1fr);
+    background-color:  #EEEFEA;
+    padding: 13px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.gallery-item:hover .image img {
+    transform: scale(1.5);
+}
+
+.gallery-item .gallery-text {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 25px;
+    pointer-events: none;
+    z-index: 4;
+    transition: .3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-text {
+    opacity: 1;
+    animation: move-down .3s linear;
+}
+
+.gallery-container {
+    box-shadow: 5px 5px 8px  #3F3F3F;
+}
+
+@keyframes move-down {
+    0% {
+        top: 10%;
+    }
+
+    50% {
+        top: 35%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
